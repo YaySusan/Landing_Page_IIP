@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIP - Institute of Integrated Praxis | Learn it. Simulate it. Do it.</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and custom colors -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'iip-blue': '#1a73e8', // Primary Blue
+                        'iip-dark': '#0f172a', // Dark Background
+                        'iip-light': '#f1f5f9', // Light Gray
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-sans text-iip-dark antialiased">
+
+    <!-- Fixed Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-iip-blue">IIP.</div>
+            
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                <a href="#solution" class="hover:text-iip-blue transition duration-150">Learn</a>
+                <a href="#who" class="hover:text-iip-blue transition duration-150">Employers</a>
+                <a href="#who" class="hover:text-iip-blue transition duration-150">Institutions</a>
+                <a href="#" class="hover:text-iip-blue transition duration-150">About</a>
+                <!-- CTA Button (Visually Distinct) -->
+                <a href="#signup" class="px-5 py-2 text-sm font-semibold text-white bg-iip-blue rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    Join Pilot
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-iip-dark focus:outline-none">
+                <!-- Icon Placeholder -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24 bg-iip-light/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Background Visualization Placeholder -->
+                <div class="absolute inset-0 opacity-10 pointer-events-none">
+                    <div class="h-full w-full bg-grid-pattern [background-size:2rem_2rem] [background-image:linear-gradient(to_right,rgba(26,115,232,.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(26,115,232,.1)_1px,transparent_1px)]"></div>
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-iip-dark leading-tight relative">
+                    Learn it. <span class="text-iip-blue">Simulate it.</span> Do it.
+                </h1>
+                <p class="mt-4 text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+                    Where education delivers **job-ready performance**. Graduate with verified competence, not just credentials.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#signup" class="px-8 py-3 text-lg font-semibold text-white bg-iip-blue rounded-xl shadow-2xl shadow-blue-400/50 hover:bg-blue-700 transition duration-300 transform hover:-translate-y-1">
+                        Join the Pilot Cohort
+                    </a>
+                    <a href="#who" class="px-8 py-3 text-lg font-semibold text-iip-dark bg-white border border-gray-300 rounded-xl shadow-md hover:bg-gray-100 transition duration-300">
+                        Partner With Us
+                    </a>
+                </div>
+
+                <!-- Small Supporting Line -->
+                <p class="mt-8 text-sm text-gray-500 italic">
+                    Launch in South Africa — built for the world.
+                </p>
+            </div>
+
+            <!-- Trust Bar Placeholder (Social Proof) -->
+            <div class="mt-16 border-t border-b border-gray-200 py-3 bg-white/70">
+                <div class="max-w-7xl mx-auto px-4 text-center text-sm font-semibold text-gray-700 space-x-6 md:space-x-12">
+                    <span class="inline-block">Powered by AI.</span>
+                    <span class="inline-block">In Partnership with [Placeholder University].</span>
+                    <span class="inline-block">Pilot focused on Engineering.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: The Problem -->
+        <section id="problem" class="py-20 md:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-iip-dark mb-12">The Performance Gap is Widening</h2>
+                
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Panel 1: Education-Work Gap -->
+                    <div class="bg-iip-light p-8 rounded-2xl shadow-lg border-t-4 border-iip-blue">
+                        <svg class="h-10 w-10 text-iip-blue mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.247m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253m-4.5 4.991v13C16.832 18.477 18.418 18 20 18v-3.757m-4.5-5.46a 6.99 6.99 0 00-6 0"></path></svg>
+                        <h3 class="text-xl font-semibold mb-3">The Education–Work Gap</h3>
+                        <p class="text-gray-600">Graduates know theory, but lack the contextual experience needed to perform from day one. They are qualified, but not capable.</p>
+                    </div>
+
+                    <!-- Panel 2: Employer Mistrust -->
+                    <div class="bg-iip-light p-8 rounded-2xl shadow-lg border-t-4 border-iip-blue">
+                        <svg class="h-10 w-10 text-iip-blue mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 12c0 2.83 1.041 5.472 2.884 7.525.139.141.298.274.471.397v-3.56l2.977-2.977A4.996 4.996 0 0012 10c0-2.761-2.239-5-5-5s-5 2.239-5 5z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-3">Employer Mistrust</h3>
+                        <p class="text-gray-600">Hiring is a high-risk gamble. Employers cannot verify practical competence through traditional degrees, leading to costly trial-and-error.</p>
+                    </div>
+
+                    <!-- Panel 3: Outdated Models -->
+                    <div class="bg-iip-light p-8 rounded-2xl shadow-lg border-t-4 border-iip-blue">
+                        <svg class="h-10 w-10 text-iip-blue mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-3">Outdated Models</h3>
+                        <p class="text-gray-600">Traditional learning models are rigid, slow to update, and fail to provide the dynamic, immediate feedback modern workplaces demand.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Our Solution – The IIP Approach -->
+        <section id="solution" class="py-20 md:py-32 bg-iip-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Our Solution: The Integrated Praxis Approach</h2>
+                
+                <div class="flex flex-col md:flex-row items-start justify-center text-center gap-12">
+                    
+                    <!-- Step 1: Learn -->
+                    <div class="flex-1 max-w-sm">
+                        <div class="mx-auto w-16 h-16 bg-iip-blue rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-xl">1</div>
+                        <h3 class="text-2xl font-semibold mb-3">Learn</h3>
+                        <p class="text-gray-300">Master academic knowledge grounded in global standards. Our curriculum is digitally integrated and constantly updated.</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="hidden md:block self-center mt-16">
+                        <svg class="w-12 h-12 text-iip-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                    <div class="md:hidden self-center rotate-90 my-6">
+                        <svg class="w-12 h-12 text-iip-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+
+                    <!-- Step 2: Simulate (Praxis) -->
+                    <div class="flex-1 max-w-sm">
+                        <div class="mx-auto w-16 h-16 bg-iip-blue rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-xl">2</div>
+                        <h3 class="text-2xl font-semibold mb-3">Simulate</h3>
+                        <p class="text-gray-300">Apply concepts in **contextualized, real-world scenarios**. This is where theory turns into measurable practice through hands-on application.</p>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="hidden md:block self-center mt-16">
+                        <svg class="w-12 h-12 text-iip-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+                     <div class="md:hidden self-center rotate-90 my-6">
+                        <svg class="w-12 h-12 text-iip-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </div>
+
+                    <!-- Step 3: Perform -->
+                    <div class="flex-1 max-w-sm">
+                        <div class="mx-auto w-16 h-16 bg-iip-blue rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-xl">3</div>
+                        <h3 class="text-2xl font-semibold mb-3">Perform</h3>
+                        <p class="text-gray-300">Graduate with verified, employer-trusted credentials that prove your on-the-job competency, not just your test scores.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: What Makes IIP Different -->
+        <section id="differentiators" class="py-20 md:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Competence That Can Be Measured</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <!-- Card 1: Pedagogy -->
+                    <div class="p-6 bg-white border border-iip-light rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                        <div class="text-iip-blue text-4xl mb-3">🛠️</div>
+                        <h3 class="text-xl font-bold mb-2">Integrated Praxis Pedagogy</h3>
+                        <p class="text-sm text-gray-600">Theory meets **structured application (Praxis)** in every module, ensuring knowledge is always applied in a controlled environment.</p>
+                        <p class="mt-3 text-iip-blue font-semibold text-sm">Target: Reduce the need for costly post-hire training by up to 60%.</p>
+                    </div>
+
+                    <!-- Card 2: Verification -->
+                    <div class="p-6 bg-white border border-iip-light rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                        <div class="text-iip-blue text-4xl mb-3">✅</div>
+                        <h3 class="text-xl font-bold mb-2">Employer Verification</h3>
+                        <p class="text-sm text-gray-600">Dedicated dashboards allow employers to instantly verify skill readiness and specific task competence.</p>
+                        <p class="mt-3 text-iip-blue font-semibold text-sm">Target: Credentials backed by 30+ global competencies.</p>
+                    </div>
+
+                    <!-- Card 3: AI Coaching -->
+                    <div class="p-6 bg-white border border-iip-light rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                        <div class="text-iip-blue text-4xl mb-3">🧠</div>
+                        <h3 class="text-xl font-bold mb-2">AI Coaching & Analytics</h3>
+                        <p class="text-sm text-gray-600">Personalized, real-time feedback loop accelerates skill acquisition by analyzing performance data captured during Praxis activities.</p>
+                        <p class="mt-3 text-iip-blue font-semibold text-sm">Target: Receive personalized feedback on 100+ critical workplace soft skills.</p>
+                    </div>
+
+                    <!-- Card 4: Global Credentials -->
+                    <div class="p-6 bg-white border border-iip-light rounded-xl shadow-xl hover:shadow-2xl transition duration-300">
+                        <div class="text-iip-blue text-4xl mb-3">🌍</div>
+                        <h3 class="text-xl font-bold mb-2">Global-Ready Credentials</h3>
+                        <p class="text-sm text-gray-600">Qualifications designed to be portable and recognized by modern companies beyond local borders.</p>
+                        <p class="mt-3 text-iip-blue font-semibold text-sm">Target: Recognized across 7 major global economic regions.</p>
+                    </div>
+                </div>
+
+                <p class="mt-12 text-center text-lg text-gray-500 italic">
+                    Our mission is to make competence measurable, not assumed.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 5: Who It's For -->
+        <section id="who" class="py-20 md:py-32 bg-iip-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Find Your Fit in the Ecosystem</h2>
+                
+                <div class="grid md:grid-cols-3 gap-10">
+                    
+                    <!-- For Learners -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-iip-blue/10 rounded-full flex items-center justify-center mb-6">
+                            <svg class="h-10 w-10 text-iip-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">For Learners</h3>
+                        <p class="text-gray-600 mb-6">Graduate with practical experience that employers trust. Be the preferred candidate.</p>
+                        <a href="#signup" class="px-6 py-2 mt-auto text-sm font-semibold text-white bg-iip-blue rounded-full hover:bg-blue-700 transition duration-300">
+                            Join the Pilot
+                        </a>
+                    </div>
+
+                    <!-- For Employers -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-iip-blue/10 rounded-full flex items-center justify-center mb-6">
+                            <svg class="h-10 w-10 text-iip-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.565 23.565 0 0112 15c-3.18 0-6.236-.605-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2M4 10h16v11a2 2 0 01-2 2H6a2 2 0 01-2-2V10z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">For Employers</h3>
+                        <p class="text-gray-600 mb-6">Access verified, job-ready graduates with pre-vetted competency profiles and reduced training needs.</p>
+                        <a href="#signup" class="px-6 py-2 mt-auto text-sm font-semibold text-iip-dark bg-gray-200 rounded-full hover:bg-gray-300 transition duration-300">
+                            Partner With Us
+                        </a>
+                    </div>
+
+                    <!-- For Institutions -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-iip-blue/10 rounded-full flex items-center justify-center mb-6">
+                            <svg class="h-10 w-10 text-iip-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M5 3h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">For Institutions</h3>
+                        <p class="text-gray-600 mb-6">Integrate IIP simulations to elevate your program quality and student employability rates globally.</p>
+                        <a href="#signup" class="px-6 py-2 mt-auto text-sm font-semibold text-iip-dark bg-gray-200 rounded-full hover:bg-gray-300 transition duration-300">
+                            Collaborate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 7: Testimonials -->
+        <section id="testimonials" class="py-20 md:py-32 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-iip-dark">What People Are Saying</h2>
+
+                <div class="space-y-12">
+                    <!-- Learner Testimonial -->
+                    <figure class="p-8 rounded-2xl bg-iip-light/50 border border-gray-100 shadow-xl">
+                        <blockquote class="text-xl italic text-gray-800">
+                            "I didn't just learn the theory; I *did* the job. I walked into my first interview with the confidence of someone who already had 6 months of experience."
+                        </blockquote>
+                        <figcaption class="mt-6 font-semibold text-iip-dark">
+                            — Zinhle K., <span class="text-iip-blue">IIP Pilot Cohort</span>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Employer Testimonial -->
+                    <figure class="p-8 rounded-2xl bg-iip-light/50 border border-gray-100 shadow-xl">
+                        <blockquote class="text-xl italic text-gray-800">
+                            "Hiring used to be a gamble. Now, we use the IIP Verification Dashboard to instantly see a candidate’s practical competence. It cuts our training budget in half."
+                        </blockquote>
+                        <figcaption class="mt-6 font-semibold text-iip-dark">
+                            — Dr. E. Mbatha, <span class="text-iip-blue">Head of Talent, [Placeholder Tech Company]</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Early Access Signup (Reduced Friction) -->
+        <section id="signup" class="py-20 md:py-32 bg-iip-dark">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-white mb-4">Be an Early Adopter</h2>
+                <p class="text-lg text-gray-300 mb-10">Be part of the first applied-learning ecosystem of its kind.</p>
+                
+                <form id="waitlist-form" class="bg-white p-8 md:p-10 rounded-3xl shadow-2xl space-y-5">
+                    
+                    <div>
+                        <label for="email" class="sr-only">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Professional Email" required 
+                               class="w-full px-5 py-3 border border-gray-300 rounded-xl focus:ring-iip-blue focus:border-iip-blue">
+                    </div>
+
+                    <div>
+                        <label for="role" class="sr-only">Your Primary Role</label>
+                        <select id="role" name="role" required 
+                                class="w-full px-5 py-3 border border-gray-300 rounded-xl appearance-none focus:ring-iip-blue focus:border-iip-blue text-gray-500">
+                            <option value="" disabled selected>Select Your Primary Role</option>
+                            <option value="Learner">Learner (Student / Job Seeker)</option>
+                            <option value="Employer">Employer (Hiring Manager / Talent Acquisition)</option>
+                            <option value="Institution">Institution (Educator / Program Director)</option>
+                        </select>
+                    </div>
+
+                    <div class="pt-2 text-left space-y-3">
+                        <p class="text-sm font-semibold text-gray-700">I am interested in:</p>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="interest" value="Pilot" class="form-checkbox h-5 w-5 text-iip-blue rounded">
+                                <span class="text-gray-600">Joining the Learner Pilot (South Africa focus)</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="interest" value="Partner" class="form-checkbox h-5 w-5 text-iip-blue rounded">
+                                <span class="text-gray-600">Partnering with IIP (Employer/Institution)</span>
+                            </label>
+                            <label class="flex items-center space-x-3">
+                                <input type="checkbox" name="interest" value="Updates" checked class="form-checkbox h-5 w-5 text-iip-blue rounded">
+                                <span class="text-gray-600">General Updates on IIP Launch</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full px-6 py-3 text-lg font-bold text-white bg-iip-blue rounded-xl shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-[1.01]">
+                        Submit Interest
+                    </button>
+                    <p id="confirmation-message" class="text-sm text-green-600 font-semibold hidden pt-2">Thank you! You'll hear from us soon.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section 8: FAQ (Objection Handling) -->
+        <section id="faq" class="py-20 md:py-32 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-iip-dark">Frequently Asked Questions</h2>
+                
+                <div class="space-y-6">
+                    <!-- FAQ 1 -->
+                    <div class="border border-gray-200 rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold text-iip-dark mb-2">Is this credential internationally recognized?</h3>
+                        <p class="text-gray-600">Yes. IIP’s focus is on universal, domain-specific competencies (like engineering design or financial modeling) which are valuable across borders. Our verification dashboards are designed to be accessible and understandable by any employer globally, providing the practical context traditional degrees lack.</p>
+                    </div>
+                    
+                    <!-- FAQ 2 -->
+                    <div class="border border-gray-200 rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold text-iip-dark mb-2">How are the Praxis activities created and verified?</h3>
+                        <p class="text-gray-600">Praxis activities are designed by subject matter experts to replicate real-world challenges. Performance data (captured digitally, physically, or via observation) is analyzed by our proprietary AI Coach to measure execution against optimal workflows, providing objective, verifiable data on competency.</p>
+                    </div>
+                    
+                    <!-- FAQ 3 -->
+                    <div class="border border-gray-200 rounded-xl p-6 shadow-md">
+                        <h3 class="text-xl font-semibold text-iip-dark mb-2">What is the cost/time commitment for the pilot?</h3>
+                        <p class="text-gray-600">The initial pilot cohort will involve a reduced time commitment and a minimal fee structure focused on early feedback. Exact details depend on your chosen specialization (e.g., Engineering, Finance). Please submit your interest via the form above for a personalized consultation on the pilot program.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-iip-dark text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm">
+            <p>© Institute of Integrated Praxis 2025</p>
+            
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="mailto:info@iip.global" class="hover:text-iip-blue transition duration-150">info@iip.global</a>
+                <!-- Icon Placeholders -->
+                <a href="#" class="hover:text-iip-blue transition duration-150">LinkedIn</a>
+                <a href="#" class="hover:text-iip-blue transition duration-150">X</a>
+                <a href="#" class="hover:text-iip-blue transition duration-150">YouTube</a>
+            </div>
+
+            <div class="mt-4 md:mt-0 space-x-6">
+                <a href="#" class="hover:text-iip-blue transition duration-150">Privacy</a>
+                <a href="#" class="hover:text-iip-blue transition duration-150">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form submission handling to show the confirmation message
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real MVP, you would send this data to your backend/CRM here (Priority 3).
+            // Example: fetch('/api/signup', { method: 'POST', body: new FormData(e.target) });
+
+            const form = document.getElementById('waitlist-form');
+            const message = document.getElementById('confirmation-message');
+
+            // Hide form and show confirmation
+            form.style.display = 'none';
+            message.style.display = 'block';
+
+            // Optional: Reset the form after a delay if you want to allow re-submission
+            setTimeout(() => {
+                // Not necessary for a simple MVP
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
